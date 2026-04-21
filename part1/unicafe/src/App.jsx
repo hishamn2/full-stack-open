@@ -2,6 +2,13 @@ import { useState } from 'react'
 const Statistics = ({ good, neutral, bad }) => {
   // We can do all the math right here inside the component!
   const total = good + neutral + bad
+  if (total === 0) {
+    return (
+      <div>
+        <p>No feedback given</p>
+      </div>
+    )
+  }
   const average = (good * 1 + neutral * 0 + bad * -1) / total
   const positive = (good / total) * 100
 
