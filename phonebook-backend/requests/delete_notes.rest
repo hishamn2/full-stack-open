@@ -1,0 +1,12 @@
+DELETE http://localhost:3001/api/persons/676766
+### Create a new person (Successful)
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "New Person",
+    "number": "000-111-2222"
+}
+
+### Verify the new person is added
+GET http://localhost:3001/api/persons
