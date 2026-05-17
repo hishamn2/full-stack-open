@@ -1,4 +1,4 @@
-DELETE http://localhost:3001/api/persons/335677
+DELETE 
 ### Create a new person (Successful)
 POST http://localhost:3001/api/persons
 Content-Type: application/json
@@ -9,4 +9,4 @@ Content-Type: application/json
 }
 
 ### Verify the new person is added
-GET http://localhost:3001/api/persons
+GET api/presons
